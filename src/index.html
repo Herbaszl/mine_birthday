@@ -8,15 +8,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <header class="hero">
     <div class="container">
         <img class="hero__logo" src="./images/Ordem LOGO.png" alt="">
         <p class="hero__text">
-            A Sessão de RPG aniversário mais divertida acontecerá em 222d 6h 30m
+            Pegue seus dados! A sessão de aniversário começa em <span id="contador"></span>
         </p>
+        <div class="infos-bar">
+            <ul class="infos-bar__infos">
+                <li class="infos-bar__infos__item">
+                    <b>Local</b>
+                    Server do Discord
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Data</b>
+                    16/02/2025
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Horário</b>
+                    19:00
+                </li>
+            </ul>
+            <a href="#" class="button button--primary">Confirme sua presença</a>
+        </div>
     </div>
 </header>
+
+<section class="event event--survival-horror">
+    <div class="container" data-aos="fade-right">
+        <div class="event__details">
+            <h2 class="event__details__title">Sobrevivendo ao Horror</h2>
+            <p class="event__details__description">Venha comemorar meu aniversário da maneira mais <b>assustadora</b> e <b>emocionante</b> possível! Usando o complemento "Sobrevivendo ao Horror", irei mestrar uma sessão de RPG para todos os convidados. Prepare-se para enfrentar seus maiores medos e viver uma aventura aterrorizante! Traga sua coragem e venha sobreviver ao horror comigo!</p>
+        </div>
+        <img class="event__image"src="./images/Sobrevivendo ao Horror.png" alt="Sobrevivendo ao Horror">
+    </div>
+</section>
+<section class="event event--sinopse event--image-left">
+    <div class="container" data-aos="fade-left">
+        <div class="event__details">
+            <h2 class="event__details__title">Sinopse</h2>
+            <p class="event__details__description">Em meio à vibrante cidade do Rio de Janeiro, um laboratório secreto esconde um terrível mistério que ameaça a segurança de todos. Os agentes da ordem são convocados para investigar uma série de eventos inexplicáveis e sinistros ocorrendo nas instalações. </p>
+        </div>
+        <img class="event__image"src="images/OrdemSinopse.png" alt="Sobrevivendo ao Horror">
+    </div>
+</section>
+<section class="event event--sobre">
+    <div class="container" data-aos="fade-right">
+        <div class="event__details">
+            <h2 class="event__details__title">O que é Ordem Paranormal?</h2>
+            <p class="event__details__description">Ordem Paranormal é um universo de ficção criado por Rafael Lange, mais conhecido como Cellbit, que mistura elementos de horror, mistério e sobrenatural. Inicialmente, começou como uma série de RPG de mesa transmitida ao vivo na plataforma Twitch, onde os jogadores assumem o papel de investigadores lidando com eventos paranormais e enfrentando entidades sobrenaturais.</p>
+        </div>
+        <img class="event__image"src="./images/OrdemSobre.png" alt="Sobrevivendo ao Horror">
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="./scripts/main.js"></script>
 </body>
 </html>
